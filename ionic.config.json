@@ -1,0 +1,8 @@
+{
+  "name": "quixx",
+  "app_id": "843fee73",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
