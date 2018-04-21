@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 /**
  * Generated class for the NumberBoxComponent component.
@@ -12,11 +12,12 @@ import { Component } from '@angular/core';
 })
 export class NumberBoxComponent {
 
-  text: string;
+  @Input() index: number;
+  @Input() number: number;
+  @Input() color: string;
+  @Input() sign: string;
 
-  constructor() {
-    console.log('Hello NumberBoxComponent Component');
-    this.text = 'Hello World';
+  markBox() {
+    console.log('change sign');
   }
-
 }
